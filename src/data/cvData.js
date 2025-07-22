@@ -7,6 +7,7 @@ const cvData = {
 		phone: "+34 654 936 255",
 		summary:
 			"Desarrollador web y comunicador audiovisual con nociones en SEO. Me considero una persona resolutiva, con iniciativa, capacidad de aprendizaje y trabajo en equipo.",
+		photo: "../../public/images/avatar-perfil.webp",
 	},
 
 	experience: [
@@ -75,17 +76,18 @@ const cvData = {
 			endDate: "2018",
 			description: "Conocimiento en marketing, branding y analítica digital.",
 		},
-        {
+		{
 			degree: "Postgrado Experto en Locución Audiovisual",
 			institution: "Universidad Pontificia de Salamanca",
 			location: "Salamanca, España",
 			startDate: "ene. 2012",
 			endDate: "jun. 2012",
-			description: "Locución comercial, radiofónica, doblaje y exposición oral.",
+			description:
+				"Locución comercial, radiofónica, doblaje y exposición oral.",
 		},
 	],
 
-	skills: [
+	softSkills: [
 		"Arquitectura hexagonal",
 		"Resolución de problemas",
 		"Comunicación efectiva",
@@ -93,11 +95,16 @@ const cvData = {
 		"Aprendizaje continuo",
 	],
 
-	devLanguages: ["HTML", "CSS", "JavaScript", "TypeScript"],
+	devLanguages: [
+		{ name: "HTML", level: "professional" },
+		{ name: "CSS", level: "professional" },
+		{ name: "JavaScript", level: "professional" },
+		{ name: "TypeScript", level: "academic" },
+	],
 
 	technologies: [
 		"React",
-        "Angular",
+		"Angular",
 		"Node.js",
 		"Vite",
 		"Bootstrap",
