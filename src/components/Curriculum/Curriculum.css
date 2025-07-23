@@ -1,0 +1,25 @@
+.curriculum-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header-image {
+    width: 200px;
+    
+}
+
+.header-image img {
+    width: 100%;
+    border-radius: 100px;
+}
