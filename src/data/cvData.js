@@ -7,7 +7,7 @@ const cvData = {
 		phone: "+34 654 936 255",
 		summary:
 			"Desarrollador web y comunicador audiovisual con nociones en SEO. Me considero una persona resolutiva, con iniciativa, capacidad de aprendizaje y trabajo en equipo.",
-		photo: "../../public/images/avatar-perfil.webp",
+		photo: "/images/avatar-perfil.webp",
 	},
 
 	experience: [
