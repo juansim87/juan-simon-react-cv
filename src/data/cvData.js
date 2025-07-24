@@ -49,7 +49,7 @@ const cvData = {
 		},
 		{
 			title: "Intérprete y operario de máquinas",
-			company: "Hergon metropolitan UK Limited",
+			company: "Hergon Metropolitan UK Limited",
 			location: "Londres, UK",
 			startDate: "jun. 2014",
 			endDate: "dic. 2014",
