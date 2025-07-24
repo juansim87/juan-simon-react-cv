@@ -6,7 +6,7 @@ const cvData = {
 		email: "juansim87@gmail.com",
 		phone: "+34 654 936 255",
 		summary:
-			"Desarrollador web y comunicador audiovisual con nociones en SEO. Me considero una persona resolutiva, con iniciativa, capacidad de aprendizaje y trabajo en equipo.",
+			"Desarrollador web y comunicador audiovisual con experiencia en SEO. Me considero una persona resolutiva, con iniciativa, capacidad de aprendizaje y trabajo en equipo.",
 		photo: "/images/avatar-perfil.webp",
 	},
 

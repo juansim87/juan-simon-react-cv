@@ -1,8 +1,9 @@
 // import { useState } from "react";
+import { ContactInfo } from "../ContactInfo/ContactInfo";
 import "./Header.css";
 
-export const Header = ({info}) => {
-	const { photo, fullName, title, location, email, phone, summary } = info;
+export const Header = ({ info }) => {
+	const { photo, fullName, title, summary } = info;
 
 	return (
 		<div className="header">
@@ -14,14 +15,10 @@ export const Header = ({info}) => {
 					<h1>{fullName}</h1>
 					<h2>{title}</h2>
 				</div>
-				<div className="info-contact">
-					<p>Ciudad: {location}</p>
-					<p>Teléfono: {phone}</p>
-					<p>Email: {email}</p>
-					<div>
-						<p className="info-summary">{summary}</p>
-					</div>
+				<div>
+					<p className="info-summary">{summary}</p>
 				</div>
+				<ContactInfo info={info} />
 			</div>
 		</div>
 	);

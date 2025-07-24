@@ -1,0 +1,9 @@
+.info-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-contact p {
+    align-self: flex-start;
+}
