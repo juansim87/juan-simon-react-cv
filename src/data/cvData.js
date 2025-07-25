@@ -114,21 +114,20 @@ const cvData = {
 	],
 
 	devLanguages: [
-		{ id: 1, name: "HTML", level: "professional" },
-		{ id: 2, name: "CSS", level: "professional" },
-		{ id: 3, name: "JavaScript", level: "professional" },
-		{ id: 4, name: "TypeScript", level: "academic" },
+		{ id: 1, name: "HTML", level: "Profesional", logo: "/logos/html5-logo.png" },
+		{ id: 2, name: "CSS", level: "Profesional", logo: "/logos/css3-logo.png" },
+		{ id: 3, name: "JavaScript", level: "Profesional", logo: "/logos/js-logo.png" },
+		{ id: 4, name: "TypeScript", level: "Profesional", logo: "/logos/ts-logo.png" },
 	],
 
 	technologies: [
-		{ id: 1, name: "React" },
-		{ id: 2, name: "Angular" },
-		{ id: 3, name: "Node.js" },
-		{ id: 4, name: "Vite" },
-		{ id: 5, name: "Bootstrap" },
-		{ id: 6, name: "Figma" },
-		{ id: 7, name: "Git" },
-		{ id: 8, name: "SCRUM" },
+		{ id: 1, name: "React", level: "Profesional", logo: "/logos/react-logo.png" },
+		{ id: 2, name: "Angular", level: "Profesional", logo: "/logos/angular-logo.png" },
+		{ id: 3, name: "Node.js", level: "Profesional", logo: "/logos/nodejs-logo.png" },
+		{ id: 4, name: "Vite", level: "Profesional", logo: "/logos/vitejs-logo.png" },
+		{ id: 5, name: "Bootstrap", level: "Académico", logo: "/logos/bootstrap-logo.png" },
+		{ id: 6, name: "Figma", level: "Académico", logo: "/logos/figma-logo.png" },
+		{ id: 7, name: "Git", level: "Profesional", logo: "/logos/git-logo.png" },
 	],
 
 	languages: [
@@ -137,14 +136,14 @@ const cvData = {
 			language: "Español",
 			countryFlag: "España",
 			level: "Nativo",
-			flag: "/icons/es.svg"
+			flag: "/icons/es.svg",
 		},
 		{
 			id: 2,
 			language: "Inglés",
 			countryFlag: "Reino Unido",
 			level: "Profesional (C1)",
-			flag: "/icons/gb.svg"
+			flag: "/icons/gb.svg",
 		},
 	],
 };
