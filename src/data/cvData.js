@@ -135,12 +135,14 @@ const cvData = {
 		{
 			id: 1,
 			language: "Español",
+			countryFlag: "España",
 			level: "Nativo",
 			flag: "/icons/es.svg"
 		},
 		{
 			id: 2,
 			language: "Inglés",
+			countryFlag: "Reino Unido",
 			level: "Profesional (C1)",
 			flag: "/icons/gb.svg"
 		},
