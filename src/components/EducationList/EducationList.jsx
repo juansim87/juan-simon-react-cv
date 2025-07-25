@@ -7,7 +7,7 @@ export const EducationList = ({education}) => {
   return (
     <div className='education-list'>
       {education.map((academicItem) => (
-        <EducationItem key={academicItem} academicItem={academicItem}/>
+        <EducationItem key={academicItem.id} academicItem={academicItem}/>
       ))}
     </div>
   );

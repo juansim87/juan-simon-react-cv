@@ -66,8 +66,18 @@ const cvData = {
 	education: [
 		{
 			id: 1,
+			degree: "Máster en desarrollo front-end",
+			institution: "ElevenCode",
+			location: "Remoto",
+			startDate: "feb. 2024",
+			endDate: "Presente",
+			description:
+				"Desarrollo web con enfoque en React, React Native y Node.js.",
+		},
+		{
+			id: 2,
 			degree: "Bootcamp de desarrollo front-end",
-			institution: "Upgrade hub",
+			institution: "UpgradeHub",
 			location: "Madrid, España",
 			startDate: "nov. 2021",
 			endDate: "jul. 2022",
@@ -75,7 +85,7 @@ const cvData = {
 				"Desarrollo web con enfoque en HTML, CSS, JavaScript, TypeScript, Angular y React.",
 		},
 		{
-			id: 2,
+			id: 3,
 			degree: "Máster en Formación y Comunicación Digital",
 			institution: "EAE Business School",
 			location: "Madrid, España",
@@ -84,7 +94,7 @@ const cvData = {
 			description: "Conocimiento en marketing, branding y analítica digital.",
 		},
 		{
-			id: 3,
+			id: 4,
 			degree: "Postgrado Experto en Locución Audiovisual",
 			institution: "Universidad Pontificia de Salamanca",
 			location: "Salamanca, España",
@@ -96,11 +106,11 @@ const cvData = {
 	],
 
 	softSkills: [
-		{ id: 1, name: "Arquitectura hexagonal" },
-		{ id: 2, name: "Resolución de problemas" },
-		{ id: 3, name: "Comunicación efectiva" },
-		{ id: 4, name: "Trabajo en equipo" },
-		{ id: 5, name: "Aprendizaje continuo" },
+		{ id: 1, name: "Comunicación efectiva" },
+		{ id: 2, name: "Trabajo en equipo" },
+		{ id: 3, name: "Drección de equipos de trabajo" },
+		{ id: 3, name: "Resolución de problemas" },
+		{ id: 4, name: "Aprendizaje continuo" },
 	],
 
 	devLanguages: [
@@ -124,13 +134,15 @@ const cvData = {
 	languages: [
 		{
 			id: 1,
-			name: "Español",
-			level: "Competencia nativa o bilingüe",
+			language: "Español",
+			level: "Nativo",
+			flag: "/icons/es.svg"
 		},
 		{
 			id: 2,
-			name: "Inglés",
-			level: "Competencia profesional completa",
+			language: "Inglés",
+			level: "Profesional (C1)",
+			flag: "/icons/gb.svg"
 		},
 	],
 };
