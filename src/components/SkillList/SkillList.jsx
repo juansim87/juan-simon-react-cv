@@ -5,7 +5,7 @@ export const SkillList = ({ softSkills }) => {
 		<div className="skill-list">
 			<ul>
 				{softSkills.map((item) => (
-					<li key={item.id}>{item.skill}</li>
+					<li key={item.id}>✅ {item.skill}</li>
 				))}
 			</ul>
 		</div>
