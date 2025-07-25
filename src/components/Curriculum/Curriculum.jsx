@@ -4,6 +4,7 @@ import { ExperienceList } from "../ExperienceList/ExperienceList";
 import { Header } from "../Header/Header";
 import { LanguageList } from "../LanguageList/LanguageList";
 import { Section } from "../Section/Section";
+import { SkillList } from "../SkillList/SkillList";
 import "./Curriculum.css";
 
 export const Curriculum = ({ data }) => {
@@ -27,7 +28,9 @@ export const Curriculum = ({ data }) => {
 				<EducationList education={education} />
 			</Section>
 			<Section title={"🗣️ Competencias informáticas"}></Section>
-			<Section title={"🔧 Soft skills"}></Section>
+			<Section title={"🔧 Soft skills"}>
+				<SkillList softSkills={softSkills}/>
+			</Section>
 			<Section title={"💬 Idiomas"}>
 				<LanguageList languages={languages}/>
 			</Section>
