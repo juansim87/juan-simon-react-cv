@@ -104,10 +104,10 @@ const cvData = {
 	],
 
 	devLanguages: [
-		{ id: 1, name: "HTML", level: "professional" },
-		{ id: 2, name: "CSS", level: "professional" },
-		{ id: 3, name: "JavaScript", level: "professional" },
-		{ id: 4, name: "TypeScript", level: "academic" },
+		{ id: 1, name: "HTML", level: "Profesional" },
+		{ id: 2, name: "CSS", level: "Profesional" },
+		{ id: 3, name: "JavaScript", level: "Profesional" },
+		{ id: 4, name: "TypeScript", level: "Profesional" },
 	],
 
 	technologies: [
