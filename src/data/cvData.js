@@ -66,7 +66,7 @@ const cvData = {
 	education: [
 		{
 			id: 1,
-			degree: "Bootcamp de desarrollo front-end (Remoto)",
+			degree: "Bootcamp de desarrollo front-end",
 			institution: "Upgrade hub",
 			location: "Madrid, España",
 			startDate: "nov. 2021",
