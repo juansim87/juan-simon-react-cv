@@ -106,11 +106,11 @@ const cvData = {
 	],
 
 	softSkills: [
-		{ id: 1, name: "Comunicación efectiva" },
-		{ id: 2, name: "Trabajo en equipo" },
-		{ id: 3, name: "Drección de equipos de trabajo" },
-		{ id: 3, name: "Resolución de problemas" },
-		{ id: 4, name: "Aprendizaje continuo" },
+		{ id: 1, skill: "Comunicación efectiva" },
+		{ id: 2, skill: "Trabajo en equipo" },
+		{ id: 3, skill: "Dirección de equipos de trabajo" },
+		{ id: 4, skill: "Resolución de problemas" },
+		{ id: 5, skill: "Aprendizaje continuo" },
 	],
 
 	devLanguages: [
