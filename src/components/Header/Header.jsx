@@ -16,7 +16,7 @@ export const Header = ({ info }) => {
 					<h2>{title}</h2>
 				</div>
 				<div>
-					<p className="info-summary">{summary}</p>
+					<p className="item-description">{summary}</p>
 				</div>
 				<ContactInfo info={info} />
 			</div>

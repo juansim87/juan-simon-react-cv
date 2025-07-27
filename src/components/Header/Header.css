@@ -1,31 +1,35 @@
 .header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .header-image {
-    width: 200px;
-    align-self: center;
-    
+	width: 200px;
+	align-self: center;
 }
 
 .header-image img {
-    width: 100%;
-    border-radius: 100px;
+	width: 100%;
+	border-radius: 100px;
 }
 
 .header-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 8px 0;
-    gap: 12px;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 8px 0;
+	gap: 12px;
 }
 
 .info-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info-summary {
+	text-align: justify;
 }

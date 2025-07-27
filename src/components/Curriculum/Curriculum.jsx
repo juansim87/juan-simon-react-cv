@@ -23,18 +23,20 @@ export const Curriculum = ({ data }) => {
 	return (
 		<div className="curriculum-container">
 			<Header info={personalInfo} />
-			<Section title={"📋Experiencia"}>
+			<Section title={"📋 Experiencia"}>
 				<ExperienceList experience={experience} />
 			</Section>
 			<Section title={"🧑🏻‍🎓 Educación"}>
 				<EducationList education={education} />
 			</Section>
 			<Section title={"🖥️ Competencias informáticas"}>
-				<DevLanguages
-					devLanguages={devLanguages}
-					subtitle={"Lenguajes de desarrollo"}
-				/>
-				<Technologies technologies={technologies} subtitle={"Tecnologías"} />
+				<div className="computer-skills">
+					<DevLanguages
+						devLanguages={devLanguages}
+						subtitle={"Lenguajes de desarrollo"}
+					/>
+					<Technologies technologies={technologies} subtitle={"Tecnologías"} />
+				</div>
 			</Section>
 			<Section title={"🔧 Soft skills"}>
 				<SkillList softSkills={softSkills} />

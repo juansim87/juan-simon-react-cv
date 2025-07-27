@@ -2,7 +2,7 @@ const cvData = {
 	personalInfo: {
 		fullName: "Juan Simón Abad",
 		title: "Frontend Engineer",
-		location: "Madrid, España",
+		location: "Madrid (España)",
 		email: "juansim87@gmail.com",
 		phone: "+34 654 936 255",
 		summary:
@@ -15,7 +15,7 @@ const cvData = {
 			id: 1,
 			title: "Frontend Engineer",
 			company: "Rocket418",
-			location: "Madrid, España",
+			location: "Remoto",
 			startDate: "oct. 2023",
 			endDate: "Presente",
 			description:
@@ -25,7 +25,7 @@ const cvData = {
 			id: 2,
 			title: "Redactor SEO",
 			company: "Atresmedia",
-			location: "Madrid, España",
+			location: "Madrid (España)",
 			startDate: "ene. 2020",
 			endDate: "oct. 2023",
 			description:
@@ -35,7 +35,7 @@ const cvData = {
 			id: 3,
 			title: "Técnico de marketing",
 			company: "Atresmedia",
-			location: "Madrid, España",
+			location: "Madrid (España)",
 			startDate: "jul. 2017",
 			endDate: "dic. 2019",
 			description:
@@ -55,7 +55,7 @@ const cvData = {
 			id: 5,
 			title: "Intérprete y operario de máquinas",
 			company: "Hergon Metropolitan UK Limited",
-			location: "Londres, UK",
+			location: "Londres (UK)",
 			startDate: "jun. 2014",
 			endDate: "dic. 2014",
 			description:
@@ -78,7 +78,7 @@ const cvData = {
 			id: 2,
 			degree: "Bootcamp de desarrollo front-end",
 			institution: "UpgradeHub",
-			location: "Madrid, España",
+			location: "Madrid (España)",
 			startDate: "nov. 2021",
 			endDate: "jul. 2022",
 			description:
@@ -86,18 +86,18 @@ const cvData = {
 		},
 		{
 			id: 3,
-			degree: "Máster en Formación y Comunicación Digital",
+			degree: "Máster en Periodismo y Comunicación Digital",
 			institution: "EAE Business School",
-			location: "Madrid, España",
+			location: "Madrid (España)",
 			startDate: "2017",
 			endDate: "2018",
 			description: "Conocimiento en marketing, branding y analítica digital.",
 		},
 		{
 			id: 4,
-			degree: "Postgrado Experto en Locución Audiovisual",
+			degree: "Posgrado Experto en Locución Audiovisual",
 			institution: "Universidad Pontificia de Salamanca",
-			location: "Salamanca, España",
+			location: "Salamanca (España)",
 			startDate: "ene. 2012",
 			endDate: "jun. 2012",
 			description:

@@ -1,9 +1,14 @@
-.info-contact {
+.contact-info {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.info-contact p {
+.contact-info p {
     align-self: flex-start;
+}
+
+.contact-info p span {
+    font-weight: 600;
 }

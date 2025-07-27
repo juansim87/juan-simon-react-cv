@@ -5,10 +5,16 @@ export const ContactInfo = ({ info }) => {
 	const { location, email, phone } = info;
 
 	return (
-		<div className="info-contact">
-			<p>Ciudad: {location}</p>
-			<p>Teléfono: {phone}</p>
-			<p>Email: {email}</p>
+		<div className="contact-info">
+			<p>
+				Residencia: <span>{location}</span>
+			</p>
+			<p>
+				Teléfono: <span>{phone}</span>
+			</p>
+			<p>
+				Email: <span>{email}</span>
+			</p>
 		</div>
 	);
 };

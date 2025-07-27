@@ -12,7 +12,7 @@ export const LanguageList = ({ languages }) => {
 							<img src={item.flag} alt={`Bandera de ${item.countryFlag}`}/>
 						</div>
 					</span>
-					<p>
+					<p className="language-level">
 						Nivel: <span>{item.level}</span>
 					</p>
 				</div>
