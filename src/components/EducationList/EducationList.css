@@ -1,6 +1,5 @@
 .education-list {
     display: flex;
     flex-direction: column;
-    padding: 12px 0;
     gap: 20px;
 }

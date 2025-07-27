@@ -3,12 +3,17 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	gap: 12px;
 }
 
 .language-title {
 	display: flex;
 	align-items: center;
 	gap: 12px;
+}
+
+.language-level span {
+	font-weight: 600;
 }
 
 .language-flag {
