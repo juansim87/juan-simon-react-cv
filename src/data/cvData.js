@@ -45,7 +45,7 @@ const cvData = {
 			id: 4,
 			title: "Jefe de redacción",
 			company: "Toigo Radio",
-			location: "Salamanca, España",
+			location: "Salamanca (España)",
 			startDate: "jun. 2015",
 			endDate: "jul. 2016",
 			description:

@@ -7,10 +7,10 @@ export const LanguageList = ({ languages }) => {
 			{languages.map((item) => (
 				<div key={item.id}>
 					<span className="language-title">
-						<h3>{item.language}</h3>
 						<div className="language-flag">
 							<img src={item.flag} alt={`Bandera de ${item.countryFlag}`}/>
 						</div>
+						<h3>{item.language}</h3>
 					</span>
 					<p className="language-level">
 						Nivel: <span>{item.level}</span>

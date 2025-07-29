@@ -8,7 +8,7 @@ export const DevLanguages = ({ devLanguages, subtitle }) => {
 			<div className="computer-skills-list">
 
 			{devLanguages.map((item) => (
-				<div key={item.id}>
+				<div className="skill-item" key={item.id}>
 					<div className="dev-language">
 						<div className="dev-language-logo">
 							<img src={item.logo} alt={`Logo de ${item.name}`} />
