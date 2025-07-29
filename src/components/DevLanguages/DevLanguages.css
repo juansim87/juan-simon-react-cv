@@ -1,7 +1,6 @@
 .dev-language {
     width: 100%;
     display: flex;
-    align-items: center;
     gap: 4px;
 }
 
@@ -15,4 +14,28 @@
 
 .dev-language-level span {
     font-weight: 500;
+}
+
+@media (min-width: 481px) {
+
+    .skill-item {
+        display:flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .dev-language {
+        gap: 20px;
+    }
+
+    .dev-language h4 {
+        font-size: 2rem;
+    }
+
+    .dev-language-logo {
+        height: 40px;
+    width: 40px;
+}
+
+
 }
