@@ -1,15 +1,15 @@
 // import { useState } from 'react';
-import { DevLanguages } from "../DevLanguages/DevLanguages";
-import { EducationList } from "../EducationList/EducationList";
-import { ExperienceList } from "../ExperienceList/ExperienceList";
 import { Header } from "../Header/Header";
-import { LanguageList } from "../LanguageList/LanguageList";
 import { Section } from "../Section/Section";
-import { SkillList } from "../SkillList/SkillList";
+import { ExperienceList } from "../ExperienceList/ExperienceList";
+import { EducationList } from "../EducationList/EducationList";
+import { DevLanguages } from "../DevLanguages/DevLanguages";
 import { Technologies } from "../Technologies/Technologies";
+import { SkillList } from "../SkillList/SkillList";
+import { LanguageList } from "../LanguageList/LanguageList";
 import "./Curriculum.css";
 
-export const Curriculum = ({ data }) => {
+export const Curriculum = ({ cvData }) => {
 	const {
 		personalInfo,
 		experience,
@@ -18,7 +18,7 @@ export const Curriculum = ({ data }) => {
 		devLanguages,
 		technologies,
 		languages,
-	} = data;
+	} = cvData;
 
 	return (
 		<div className="curriculum-container">

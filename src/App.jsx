@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import { Curriculum } from "./components/Curriculum/Curriculum";
 import cvData from "./data/cvData";
+import sunIcon from "./assets/icons/sun.png";
+import moonIcon from "./assets/icons/moon.png";
 
 export const App = () => {
 	const [darkMode, setDarkMode] = useState(false);
@@ -11,10 +13,13 @@ export const App = () => {
 
 	return (
 		<div className={darkMode ? "dark-mode" : "light-mode"}>
-			<div id="dark-mode-btn" role="button" onClick={onToggleDarkMode} alt= "Cambiar entre modo oscuro y modo claro">
-				<img src={darkMode ? "icons/sun.png" : "icons/moon.png"} />
+			<div id="dark-mode-btn" role="button" onClick={onToggleDarkMode} aria-label="Cambiar entre modo oscuro y modo claro">
+				<img
+					src={darkMode ? sunIcon : moonIcon}
+					alt="Icono modo claro y modo oscuro"
+				/>
 			</div>
-			<Curriculum  data={cvData} />
+			<Curriculum cvData={cvData} />
 		</div>
 	);
 };

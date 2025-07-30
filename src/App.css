@@ -83,7 +83,12 @@
     height: 2rem;
   }
 
+  .computer-skills {
+	gap: 52px;
+  }
+
   .computer-skills-list {
-	row-gap: 40px;
+	justify-content: flex-start;
+	row-gap: 20px;
   }
 }

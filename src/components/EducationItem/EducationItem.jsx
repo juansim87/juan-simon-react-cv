@@ -2,7 +2,7 @@
 import "./EducationItem.css";
 
 export const EducationItem = ({ academicItem }) => {
-	const { degree, institution, location, startDate, endDate, description } =
+	const { degree, institution, location, startDate, endDate, description, id } =
 		academicItem;
 
 	return (
@@ -15,7 +15,11 @@ export const EducationItem = ({ academicItem }) => {
 				<p>
 					{location} | {startDate} - {endDate}
 				</p>
-				<p className="item-description">{description}</p>
+				<ul>
+					{description.map((item, index) => (
+						<li key={`${id}-${index}`}>· {item}</li>
+					))}
+				</ul>
 			</div>
 		</div>
 	);

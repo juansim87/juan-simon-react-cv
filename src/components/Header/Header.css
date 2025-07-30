@@ -52,6 +52,7 @@
 	.header {
 		min-height: 500px;
 		flex-direction: row;
+		gap: 20px;
 	}
 
 	.header-main {
@@ -76,6 +77,6 @@
 	.header-info {
 		height: 100%;
 		padding: 0;
-		gap: 0;
+		gap: 60px;
 	}
 }
