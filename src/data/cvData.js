@@ -14,123 +14,151 @@ const cvData = {
 
 	experience: [
 		{
-			id: 1,
+			id: "exp1",
 			title: "Frontend Engineer  -  React",
 			company: "Rocket418",
 			location: "Remoto",
 			startDate: "oct. 2023",
 			endDate: "Presente",
-			description:
-				"Desarrollo de nuevas funcionalidades y refactorización de código heredado. Mejora del sistema de navegación y experiencia de usuario.",
+			description: [
+				"Desarrollo de nuevas funcionalidades",
+				"Refactorización de código heredado",
+				"Mejora del sistema de navegación y experiencia de usuario",
+			],
 		},
 		{
-			id: 2,
+			id: "exp2",
 			title: "Redactor SEO",
 			company: "Atresmedia",
 			location: "Madrid (España)",
 			startDate: "ene. 2020",
 			endDate: "oct. 2023",
-			description:
-				"Implementación y creación de estrategias globales para contenido SEO de laSexta.com",
+			description: [
+				"Redacción de contenido SEO",
+				"Creación e implementación de estrategias de posicionamiento para contenido de laSexta.com",
+			],
 		},
 		{
-			id: 3,
+			id: "exp3",
 			title: "Técnico de marketing",
 			company: "Atresmedia",
 			location: "Madrid (España)",
 			startDate: "jul. 2017",
 			endDate: "dic. 2019",
-			description:
-				"Redacción y gestión de promociones de contenidos para Atresmedia, elaborando informes diarios, coordinando la comunicación interna y analizando el impacto de las campañas.",
+			description: [
+				"Redacción y gestión de promociones de contenidos para Atresmedia",
+				"Elaboración de informes diarios",
+				"Coordinación de comunicación interna",
+				"Análisis de impacto de campañas de promoción",
+			],
 		},
 		{
-			id: 4,
+			id: "exp4",
 			title: "Jefe de redacción",
 			company: "Toigo Radio",
 			location: "Salamanca (España)",
 			startDate: "jun. 2015",
 			endDate: "jul. 2016",
-			description:
-				"Gestión de equipo para redacción de contenidos en la web. Realizador de Informa2, los informativos de tarde emitidos en el mes de mayo. Gestión de redes sociales.",
+			description: [
+				"Gestión de equipo para redacción de contenidos en la web",
+				"Realizador de Informa2",
+				"Gestión de redes sociales",
+			],
 		},
 		{
-			id: 5,
+			id: "exp5",
 			title: "Intérprete y operario de máquinas",
 			company: "Hergon Metropolitan UK Limited",
 			location: "Londres (UK)",
 			startDate: "jun. 2014",
 			endDate: "dic. 2014",
-			description:
-				"Intérprete para los operarios españoles en la obra de la línea de metro Elizabeth en Londres. Operario de máquinas.",
+			description: [
+				"Intérprete para operarios españoles en la obra de la línea de metro Elizabeth",
+				"Operario de máquinas",
+			],
 		},
 	],
 
 	education: [
 		{
-			id: 1,
+			id: "edu1",
 			degree: "Máster en Desarrollo Web (fullstack), Mobile, IA",
 			institution: "ElevenCode School",
 			location: "Remoto",
 			startDate: "feb. 2024",
 			endDate: "Presente",
-			description:
-				"Desarrollo web y mobile con enfoque en React, React Native y Node.js. Temario: clean code, arquitectura, testing. Adicionalmente, aprender sobre herramientas IA.",
+			description: [
+				"Desarrollo web y mobile con enfoque en React, React Native y Node.js",
+				"Clean Code",
+				"Arquitectura hexagonal",
+				"Testing",
+				"Formación adicional sobre herramientas IA",
+			],
 		},
 		{
-			id: 2,
+			id: "edu2",
 			degree: "Bootcamp de desarrollo Frontend",
 			institution: "UpgradeHub",
 			location: "Madrid (España)",
 			startDate: "nov. 2021",
 			endDate: "jul. 2022",
-			description:
+			description: [
 				"Desarrollo web con enfoque en HTML, CSS, JavaScript, TypeScript, Angular y React.",
+			],
 		},
 		{
-			id: 3,
+			id: "edu3",
 			degree: "Máster en Periodismo y Comunicación Digital",
 			institution: "EAE Business School",
 			location: "Madrid (España)",
 			startDate: "2017",
 			endDate: "2018",
-			description: "Conocimiento en marketing, branding y analítica digital.",
+			description: [
+				"Marketing, branding y analítica digital",
+				"Comunicación corporativa",
+				"Comunicación Y Periodismo Digital",
+			],
 		},
 		{
-			id: 4,
+			id: "edu4",
 			degree: "Posgrado Experto en Locución Audiovisual",
 			institution: "Universidad Pontificia de Salamanca",
 			location: "Salamanca (España)",
 			startDate: "ene. 2012",
 			endDate: "jun. 2012",
-			description:
-				"Locución comercial, radiofónica, doblaje y exposición oral.",
+			description: [
+				"Locución comercial",
+				"Locución radiofónica",
+				"Doblaje",
+				"Exposición oral",
+			],
 		},
 	],
 
 	softSkills: [
-		{ id: 1, skill: "Comunicación efectiva" },
-		{ id: 2, skill: "Trabajo en equipo" },
-		{ id: 3, skill: "Dirección de equipos de trabajo" },
-		{ id: 4, skill: "Resolución de problemas" },
-		{ id: 5, skill: "Aprendizaje continuo" },
+		{ id: "skl1", skill: "Comunicación efectiva" },
+		{ id: "skl2", skill: "Trabajo en equipo" },
+		{ id: "skl3", skill: "Dirección de equipos de trabajo" },
+		{ id: "skl4", skill: "Resolución de problemas" },
+		{ id: "skl5", skill: "Aprendizaje continuo" },
 	],
 
 	devLanguages: [
 		{
-			id: 1,
+			id: "dev1",
 			name: "HTML",
 			level: "Profesional",
 			logo: "/logos/html5-logo.png",
 		},
-		{ id: 2, name: "CSS", level: "Profesional", logo: "/logos/css3-logo.png" },
+		{ id: "dev2", name: "CSS", level: "Profesional", logo: "/logos/css3-logo.png" },
 		{
-			id: 3,
+			id: "dev3",
 			name: "JavaScript",
 			level: "Profesional",
 			logo: "/logos/js-logo.png",
 		},
 		{
-			id: 4,
+			id: "dev4",
 			name: "TypeScript",
 			level: "Profesional",
 			logo: "/logos/ts-logo.png",
@@ -139,49 +167,49 @@ const cvData = {
 
 	technologies: [
 		{
-			id: 1,
+			id: "tec1",
 			name: "React",
 			level: "Profesional",
 			logo: "/logos/react-logo.png",
 		},
 		{
-			id: 2,
+			id: "tec2",
 			name: "Angular",
 			level: "Profesional",
 			logo: "/logos/angular-logo.png",
 		},
 		{
-			id: 3,
+			id: "tec3",
 			name: "Node.js",
 			level: "Profesional",
 			logo: "/logos/nodejs-logo.png",
 		},
 		{
-			id: 4,
+			id: "tec4",
 			name: "Vite",
 			level: "Profesional",
 			logo: "/logos/vitejs-logo.png",
 		},
 		{
-			id: 5,
+			id: "tec5",
 			name: "Bootstrap",
 			level: "Académico",
 			logo: "/logos/bootstrap-logo.png",
 		},
-		{ id: 6, name: "Figma", level: "Académico", logo: "/logos/figma-logo.png" },
-		{ id: 7, name: "Git", level: "Profesional", logo: "/logos/git-logo.png" },
+		{ id: "tec6", name: "Figma", level: "Académico", logo: "/logos/figma-logo.png" },
+		{ id: "tec7", name: "Git", level: "Profesional", logo: "/logos/git-logo.png" },
 	],
 
 	languages: [
 		{
-			id: 1,
+			id: "lan1",
 			language: "Español",
 			countryFlag: "España",
 			level: "Nativo",
 			flag: "/icons/es.svg",
 		},
 		{
-			id: 2,
+			id: "lan2",
 			language: "Inglés",
 			countryFlag: "Reino Unido",
 			level: "Profesional (C1)",

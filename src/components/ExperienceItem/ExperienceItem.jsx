@@ -2,8 +2,10 @@
 import "./ExperienceItem.css";
 
 export const ExperienceItem = ({ jobItem }) => {
-	const { company, title, location, startDate, endDate, description } = jobItem;
+	const { company, title, location, startDate, endDate, description, id } = jobItem;
 
+
+	
 	return (
 		<div className="item-container">
 			<div className="item-title">
@@ -14,7 +16,11 @@ export const ExperienceItem = ({ jobItem }) => {
 				<p>
 					{location} | {startDate} - {endDate}
 				</p>
-				<p className="item-description">{description}</p>
+				<ul>
+					{description.map((item, index) => (
+						<li key={`${id}-${index}`}>· {item}</li>
+					))}
+				</ul>
 			</div>
 		</div>
 	);
