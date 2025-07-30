@@ -1,14 +1,39 @@
 .contact-info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
 }
 
 .contact-info p {
-    align-self: flex-start;
+	align-self: flex-start;
 }
 
 .contact-info p span {
-    font-weight: 600;
+	font-weight: 600;
+}
+
+.rrss {
+	display: flex;
+	gap: 20px;
+}
+
+.rrss-icon {
+	width: 40px;
+}
+
+.rrss-icon img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+@media (min-width: 481px) {
+	.rrss {
+		align-self: flex-start;
+	}
+
+	.rrss-icon {
+        width: 60px;
+	}
 }

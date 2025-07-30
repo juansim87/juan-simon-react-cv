@@ -1,10 +1,12 @@
 const cvData = {
 	personalInfo: {
 		fullName: "Juan Simón Abad",
-		title: "Frontend Engineer",
+		title: "Frontend Engineer -  React",
 		location: "Madrid (España)",
 		email: "juansim87@gmail.com",
 		phone: "+34 654 936 255",
+		linkedin: "https://www.linkedin.com/in/juan-simon-frontend",
+		github: "https://github.com/juansim87",
 		summary:
 			"Desarrollador web y comunicador audiovisual con experiencia en SEO. Me considero una persona resolutiva, con iniciativa, capacidad de aprendizaje y trabajo en equipo.",
 		photo: "/images/avatar-perfil.webp",
@@ -13,13 +15,13 @@ const cvData = {
 	experience: [
 		{
 			id: 1,
-			title: "Frontend Engineer",
+			title: "Frontend Engineer  -  React",
 			company: "Rocket418",
 			location: "Remoto",
 			startDate: "oct. 2023",
 			endDate: "Presente",
 			description:
-				"Desarrollo de nuevas funcionalidades en React y refactorización de código heredado. Mejora del sistema de navegación y experiencia de usuario.",
+				"Desarrollo de nuevas funcionalidades y refactorización de código heredado. Mejora del sistema de navegación y experiencia de usuario.",
 		},
 		{
 			id: 2,
@@ -66,17 +68,17 @@ const cvData = {
 	education: [
 		{
 			id: 1,
-			degree: "Máster en desarrollo front-end",
-			institution: "ElevenCode",
+			degree: "Máster en Desarrollo Web (fullstack), Mobile, IA",
+			institution: "ElevenCode School",
 			location: "Remoto",
 			startDate: "feb. 2024",
 			endDate: "Presente",
 			description:
-				"Desarrollo web con enfoque en React, React Native y Node.js.",
+				"Desarrollo web y mobile con enfoque en React, React Native y Node.js. Temario: clean code, arquitectura, testing. Adicionalmente, aprender sobre herramientas IA.",
 		},
 		{
 			id: 2,
-			degree: "Bootcamp de desarrollo front-end",
+			degree: "Bootcamp de desarrollo Frontend",
 			institution: "UpgradeHub",
 			location: "Madrid (España)",
 			startDate: "nov. 2021",
@@ -114,18 +116,58 @@ const cvData = {
 	],
 
 	devLanguages: [
-		{ id: 1, name: "HTML", level: "Profesional", logo: "/logos/html5-logo.png" },
+		{
+			id: 1,
+			name: "HTML",
+			level: "Profesional",
+			logo: "/logos/html5-logo.png",
+		},
 		{ id: 2, name: "CSS", level: "Profesional", logo: "/logos/css3-logo.png" },
-		{ id: 3, name: "JavaScript", level: "Profesional", logo: "/logos/js-logo.png" },
-		{ id: 4, name: "TypeScript", level: "Profesional", logo: "/logos/ts-logo.png" },
+		{
+			id: 3,
+			name: "JavaScript",
+			level: "Profesional",
+			logo: "/logos/js-logo.png",
+		},
+		{
+			id: 4,
+			name: "TypeScript",
+			level: "Profesional",
+			logo: "/logos/ts-logo.png",
+		},
 	],
 
 	technologies: [
-		{ id: 1, name: "React", level: "Profesional", logo: "/logos/react-logo.png" },
-		{ id: 2, name: "Angular", level: "Profesional", logo: "/logos/angular-logo.png" },
-		{ id: 3, name: "Node.js", level: "Profesional", logo: "/logos/nodejs-logo.png" },
-		{ id: 4, name: "Vite", level: "Profesional", logo: "/logos/vitejs-logo.png" },
-		{ id: 5, name: "Bootstrap", level: "Académico", logo: "/logos/bootstrap-logo.png" },
+		{
+			id: 1,
+			name: "React",
+			level: "Profesional",
+			logo: "/logos/react-logo.png",
+		},
+		{
+			id: 2,
+			name: "Angular",
+			level: "Profesional",
+			logo: "/logos/angular-logo.png",
+		},
+		{
+			id: 3,
+			name: "Node.js",
+			level: "Profesional",
+			logo: "/logos/nodejs-logo.png",
+		},
+		{
+			id: 4,
+			name: "Vite",
+			level: "Profesional",
+			logo: "/logos/vitejs-logo.png",
+		},
+		{
+			id: 5,
+			name: "Bootstrap",
+			level: "Académico",
+			logo: "/logos/bootstrap-logo.png",
+		},
 		{ id: 6, name: "Figma", level: "Académico", logo: "/logos/figma-logo.png" },
 		{ id: 7, name: "Git", level: "Profesional", logo: "/logos/git-logo.png" },
 	],

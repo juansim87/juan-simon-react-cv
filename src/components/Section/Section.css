@@ -28,9 +28,11 @@
 		--section-width: 85%;
 	}
 
-	
-
 	.separator {
 		margin: 40px 0;
+	}
+
+	.items-list {
+		gap: 40px;
 	}
 }
