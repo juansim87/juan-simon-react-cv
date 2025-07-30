@@ -1,21 +1,28 @@
-.dev-language {
+.skill-name {
 	width: 100%;
 	display: flex;
+	align-items: center;
 	gap: 4px;
 }
 
-.dev-language-logo {
+/* Logo */
+.skill-logo {
 	width: 20px;
+	height: 20px;
 }
 
-.dev-language-logo img {
+.skill-logo img {
 	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
-.dev-language-level span {
+/* Nivel */
+.skill-level span {
 	font-weight: 500;
 }
 
+/* Desktop */
 @media (min-width: 481px) {
 	.skill-item {
 		display: flex;
@@ -23,16 +30,16 @@
 		gap: 8px;
 	}
 
-	.dev-language {
+	.skill-name {
 		gap: 20px;
 	}
 
-	.dev-language h4 {
+	.skill-name h4 {
 		font-size: 2rem;
 	}
 
-	.dev-language-logo {
-		height: 40px;
+	.skill-logo {
 		width: 40px;
+		height: 40px;
 	}
 }
