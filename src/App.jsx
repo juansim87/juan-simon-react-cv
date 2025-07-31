@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./App.css";
-import { Curriculum } from "./components/Curriculum/Curriculum";
 import cvData from "./data/cvData";
 import sunIcon from "./assets/icons/sun.png";
 import moonIcon from "./assets/icons/moon.png";
+import { MainView } from "./components/MainView/MainView";
 
 export const App = () => {
 	const [darkMode, setDarkMode] = useState(false);
@@ -19,7 +19,7 @@ export const App = () => {
 					alt="Icono modo claro y modo oscuro"
 				/>
 			</div>
-			<Curriculum cvData={cvData} />
+			<MainView cvData = {cvData} />
 		</div>
 	);
 };
