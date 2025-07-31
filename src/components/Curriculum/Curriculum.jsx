@@ -1,14 +1,11 @@
 // import { useState } from 'react';
+import "./Curriculum.css";
 import { Header } from "../Header/Header";
 import { Section } from "../Section/Section";
 import { ExperienceList } from "../ExperienceList/ExperienceList";
 import { EducationList } from "../EducationList/EducationList";
-import { DevLanguages } from "../DevLanguages/DevLanguages";
-import { Technologies } from "../Technologies/Technologies";
 import { SkillList } from "../SkillList/SkillList";
 import { LanguageList } from "../LanguageList/LanguageList";
-
-import "./Curriculum.css";
 import { HardSkills } from "../HardSkills/HardSkills";
 
 export const Curriculum = ({ cvData }) => {
@@ -32,18 +29,6 @@ export const Curriculum = ({ cvData }) => {
 				<Section title={"🧑🏻‍🎓 Educación"}>
 					<EducationList education={education} />
 				</Section>
-				{/* <Section title={"🖥️ Competencias informáticas"}>
-					<div className="computer-skills">
-						<DevLanguages
-							devLanguages={devLanguages}
-							subtitle={"Lenguajes de desarrollo"}
-						/>
-						<Technologies
-							technologies={technologies}
-							subtitle={"Tecnologías"}
-						/>
-					</div>
-				</Section> */}
 				<Section title={"🖥️ Competencias informáticas"}>
 					<div className="computer-skills">
 						<HardSkills
