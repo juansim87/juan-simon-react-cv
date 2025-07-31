@@ -7,7 +7,9 @@ import { DevLanguages } from "../DevLanguages/DevLanguages";
 import { Technologies } from "../Technologies/Technologies";
 import { SkillList } from "../SkillList/SkillList";
 import { LanguageList } from "../LanguageList/LanguageList";
+
 import "./Curriculum.css";
+import { HardSkills } from "../HardSkills/HardSkills";
 
 export const Curriculum = ({ cvData }) => {
 	const {
@@ -30,7 +32,7 @@ export const Curriculum = ({ cvData }) => {
 				<Section title={"🧑🏻‍🎓 Educación"}>
 					<EducationList education={education} />
 				</Section>
-				<Section title={"🖥️ Competencias informáticas"}>
+				{/* <Section title={"🖥️ Competencias informáticas"}>
 					<div className="computer-skills">
 						<DevLanguages
 							devLanguages={devLanguages}
@@ -40,6 +42,15 @@ export const Curriculum = ({ cvData }) => {
 							technologies={technologies}
 							subtitle={"Tecnologías"}
 						/>
+					</div>
+				</Section> */}
+				<Section title={"🖥️ Competencias informáticas"}>
+					<div className="computer-skills">
+						<HardSkills
+							subtitle="Lenguajes de desarrollo"
+							items={devLanguages}
+						/>
+						<HardSkills subtitle="Tecnologías" items={technologies} />
 					</div>
 				</Section>
 				<Section title={"🔧 Soft skills"}>
