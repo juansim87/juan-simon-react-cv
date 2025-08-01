@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./MainView.css";
 import { Curriculum } from "../Curriculum/Curriculum";
+import { InteractiveCV } from "../InteractiveCV/InteractiveCV";
 
 export const MainView = ({ cvData }) => {
 	const [view, setView] = useState("traditional");
@@ -26,7 +27,7 @@ export const MainView = ({ cvData }) => {
             <div className="cv-content">
                 {view === "traditional" ? (
                     <Curriculum cvData={cvData}/>
-                ) : <div>AQUÍ VIENE EL CV INTERACTIVO</div>}
+                ) : <InteractiveCV cvData={cvData}/>}
             </div>
 		</div>
 	);
