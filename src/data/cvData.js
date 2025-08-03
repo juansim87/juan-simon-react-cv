@@ -4,9 +4,9 @@ const cvData = {
 		title: "Frontend Engineer -  React",
 		location: "Madrid (España)",
 		email: "juansim87@gmail.com",
-		phone: "+34 654 936 255",
 		linkedin: "https://www.linkedin.com/in/juan-simon-frontend",
 		github: "https://github.com/juansim87",
+		portfolio: "https://juan-simon-porfolio.netlify.app/",
 		summary:
 			"Desarrollador web y comunicador audiovisual con experiencia en SEO. Me considero una persona resolutiva, con iniciativa, capacidad de aprendizaje y trabajo en equipo.",
 		photo: "/images/avatar-perfil.webp",
