@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./MainView.css";
 import { Curriculum } from "../Curriculum/Curriculum";
 import { InteractiveCV } from "../InteractiveCV/InteractiveCV";
+import { Footer } from "../Footer/Footer";
 
 export const MainView = ({ cvData }) => {
 	const [view, setView] = useState("traditional");
@@ -24,11 +25,14 @@ export const MainView = ({ cvData }) => {
 					CV Interactivo
 				</div>
 			</nav>
-            <div className="cv-content">
-                {view === "traditional" ? (
-                    <Curriculum cvData={cvData}/>
-                ) : <InteractiveCV cvData={cvData}/>}
-            </div>
+			<div className="cv-content">
+				{view === "traditional" ? (
+					<Curriculum cvData={cvData} />
+				) : (
+					<InteractiveCV cvData={cvData} />
+				)}
+			</div>
+			<Footer cvData={cvData} />
 		</div>
 	);
 };

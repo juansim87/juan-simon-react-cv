@@ -40,13 +40,15 @@
 }
 
 .light-mode {
-	color: #272c40;
+	--text-color: #04151f;
 	background-color: #e1d8cf;
+	color: var(--text-color);
 }
 
 .dark-mode {
-	background-color: #272c40;
-	color: #e1d8cf;
+	--text-color: #e1d8cf;
+	background-color: #2a2a38;
+	color: var(--text-color);
 }
 
 #dark-mode-btn {
