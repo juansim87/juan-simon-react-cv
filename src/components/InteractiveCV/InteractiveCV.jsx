@@ -20,7 +20,8 @@ export const InteractiveCV = ({ cvData }) => {
 	} = cvData;
 
 	const [activeTab, setActiveTab] = useState("experience");
-
+	const [animating, setAnimating] = useState(false);
+	const [visibleTab, setVisibleTab] = useState("experience");
 	const tabs = [
 		{ id: "experience", label: "📋 Experiencia" },
 		{ id: "education", label: "🎓 Educación" },
@@ -29,10 +30,19 @@ export const InteractiveCV = ({ cvData }) => {
 		{ id: "languages", label: "💬 Idiomas" },
 	];
 
-	const currentTab = tabs.find((tab) => tab.id === activeTab);
+	const handleTabChange = (newTab) => {
+		if (newTab === activeTab || animating) return;
 
-	console.log(currentTab);
+		setAnimating(true);
 
+		setTimeout(() => {
+			setVisibleTab(newTab);
+			setActiveTab(newTab);
+			setAnimating(false);
+		}, 400);
+	};
+
+	const currentTab = tabs.find((tab) => tab.id === visibleTab);
 	return (
 		<div className="interactive-cv">
 			<Header info={personalInfo} />
@@ -41,7 +51,7 @@ export const InteractiveCV = ({ cvData }) => {
 					<div
 						key={item.id}
 						className={`tab ${activeTab === item.id ? "active-tab" : ""}`}
-						onClick={() => setActiveTab(item.id)}
+						onClick={() => handleTabChange(item.id)}
 						role="button"
 					>
 						<p>{item.label}</p>
@@ -50,14 +60,17 @@ export const InteractiveCV = ({ cvData }) => {
 			</div>
 			<div className="interactive-content">
 				{currentTab && (
-					<Section title={currentTab.label}>
-						{activeTab === "experience" && (
+					<Section
+						title={currentTab.label}
+						className={animating ? "scroll-collapse" : "scroll-expand"}
+					>
+						{visibleTab === "experience" && (
 							<ExperienceList experience={experience} />
 						)}
-						{activeTab === "education" && (
+						{visibleTab === "education" && (
 							<EducationList education={education} />
 						)}
-						{activeTab === "it-skills" && (
+						{visibleTab === "it-skills" && (
 							<div className="computer-skills">
 								<HardSkills
 									subtitle="Lenguajes de desarrollo"
@@ -66,10 +79,10 @@ export const InteractiveCV = ({ cvData }) => {
 								<HardSkills subtitle="Tecnologías" items={technologies} />
 							</div>
 						)}
-						{activeTab === "soft-skills" && (
+						{visibleTab === "soft-skills" && (
 							<SkillList softSkills={softSkills} />
 						)}
-						{activeTab === "languages" && (
+						{visibleTab === "languages" && (
 							<LanguageList languages={languages} />
 						)}
 					</Section>

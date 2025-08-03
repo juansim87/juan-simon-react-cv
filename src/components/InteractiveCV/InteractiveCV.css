@@ -1,3 +1,20 @@
+.interactive-cv {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.interactive-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .tab-nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -22,3 +39,36 @@
 .tab.active-tab {
 	background-color: #98372881;
 }
+
+.scroll-expand {
+	animation: scrollOpen 0.4s ease forwards;
+	transform-origin: top;
+}
+
+.scroll-collapse {
+	animation: scrollClose 0.4s ease forwards;
+	transform-origin: top;
+}
+
+@keyframes scrollOpen {
+	0% {
+		opacity: 0;
+		transform: scaleY(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+} /* ← quita el punto y coma */
+
+@keyframes scrollClose {
+	0% {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scaleY(0);
+	}
+}
+
