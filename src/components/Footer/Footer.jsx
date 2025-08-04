@@ -31,7 +31,7 @@ export const Footer = ({ cvData }) => {
 				</div>
 				<div className="footer-info">
 					<p>
-						📍<span>{location}</span> | 📧<span> {email}</span>
+						<span>📍{location}</span> | <span>📧 {email}</span>
 					</p>
 				</div>
 			</div>
