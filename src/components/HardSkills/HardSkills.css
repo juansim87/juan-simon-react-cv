@@ -1,0 +1,45 @@
+.skill-name {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+/* Logo */
+.skill-logo {
+	width: 20px;
+	height: 20px;
+}
+
+.skill-logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/* Nivel */
+.skill-level span {
+	font-weight: 500;
+}
+
+/* Desktop */
+@media (min-width: 481px) {
+	.skill-item {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.skill-name {
+		gap: 20px;
+	}
+
+	.skill-name h4 {
+		font-size: 2rem;
+	}
+
+	.skill-logo {
+		width: 40px;
+		height: 40px;
+	}
+}

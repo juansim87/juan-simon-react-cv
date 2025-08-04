@@ -1,0 +1,30 @@
+.main-view {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.cv-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.nav-button {
+	cursor: pointer;
+	background-color: #676f5441;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+.nav-button:hover {
+	background-color: #98372881;
+	transition: 0.5s;
+}
+
+.active {
+	background-color: #98372881;
+}

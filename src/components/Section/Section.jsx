@@ -1,12 +1,14 @@
 // import { useState } from 'react';
 import "./Section.css";
 
-export const Section = ({ title, children }) => {
+export const Section = ({ title, children, className = "" }) => {
 	return (
-		<div className="section">
+		<div className={`section ${className}`}>
 			<div className="separator"></div>
-			<h2>{title}</h2>
-			{children}
+			<div className="items-list">
+				<h2>{title}</h2>
+				{children}
+			</div>
 		</div>
 	);
 };

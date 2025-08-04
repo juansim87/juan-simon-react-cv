@@ -1,0 +1,96 @@
+.item-container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.item-info {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.item-title {
+	display: flex;
+	flex-direction: column;
+}
+
+.item-description {
+	text-align: justify;
+}
+
+.computer-skills {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.computer-skills-container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.computer-skills-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 16px;
+}
+
+.light-mode {
+	--text-color: #04151f;
+	background-color: #e1d8cf;
+	color: var(--text-color);
+}
+
+.dark-mode {
+	--text-color: #e1d8cf;
+	background-color: #2a2a38;
+	color: var(--text-color);
+}
+
+#dark-mode-btn {
+	position: fixed;
+	top: 0.4rem;
+	right: 0.4rem;
+	width: 1.7rem;
+	height: 1.7rem;
+	cursor: pointer;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: transform 0.2s ease;
+}
+
+#dark-mode-btn img {
+	width: 100%;
+	height: auto;
+	display: block;
+	pointer-events: none; /* para que el clic se registre en el div */
+}
+
+#dark-mode-btn:hover {
+	transform: scale(1.1);
+}
+
+@media (min-width: 481px) {
+	#dark-mode-btn {
+		top: 1rem;
+		right: 1rem;
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.computer-skills {
+		gap: 52px;
+	}
+
+	.computer-skills-list {
+		justify-content: flex-start;
+		row-gap: 20px;
+	}
+}

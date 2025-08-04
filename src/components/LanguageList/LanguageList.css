@@ -3,6 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	gap: 12px;
 }
 
 .language-title {
@@ -11,11 +12,22 @@
 	gap: 12px;
 }
 
+.language-level span {
+	font-weight: 600;
+}
+
 .language-flag {
 	width: 24px;
-	margin-top: 10px;
+	margin-top: 6px;
 }
 
 .language-flag img {
 	width: 100%;
+}
+
+@media (min-width: 481px) {
+	.language-list {
+		flex-direction: row;
+		gap: 60px;
+	}
 }
