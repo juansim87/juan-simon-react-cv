@@ -41,3 +41,17 @@
 		width: 60px;
 	}
 }
+
+
+@media print {
+	.contact-info {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.rrss {
+		display: none;
+	}
+}

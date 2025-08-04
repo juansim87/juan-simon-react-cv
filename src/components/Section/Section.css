@@ -37,3 +37,9 @@
 		gap: 40px;
 	}
 }
+
+@media print {
+	.separator {
+		margin: 20px 0;
+	}
+}
