@@ -19,10 +19,11 @@ export const InteractiveCV = ({ cvData }) => {
 		languages,
 	} = cvData;
 
-	const [activeTab, setActiveTab] = useState("experience");
+	const [activeTab, setActiveTab] = useState("all");
 	const [animating, setAnimating] = useState(false);
-	const [visibleTab, setVisibleTab] = useState("experience");
+	const [visibleTab, setVisibleTab] = useState("all");
 	const tabs = [
+		{ id: "all", label: "📄 CV completo" },
 		{ id: "experience", label: "📋 Experiencia" },
 		{ id: "education", label: "🎓 Educación" },
 		{ id: "it-skills", label: "🖥️ Competencias informáticas" },
@@ -59,18 +60,15 @@ export const InteractiveCV = ({ cvData }) => {
 				))}
 			</div>
 			<div className="interactive-content">
-				{currentTab && (
-					<Section
-						title={currentTab.label}
-						className={animating ? "scroll-collapse" : "scroll-expand"}
-					>
-						{visibleTab === "experience" && (
+				{visibleTab === "all" ? (
+					<>
+						<Section title="📋 Experiencia">
 							<ExperienceList experience={experience} />
-						)}
-						{visibleTab === "education" && (
+						</Section>
+						<Section title="🎓 Educación">
 							<EducationList education={education} />
-						)}
-						{visibleTab === "it-skills" && (
+						</Section>
+						<Section title="🖥️ Competencias informáticas">
 							<div className="computer-skills">
 								<HardSkills
 									subtitle="Lenguajes de desarrollo"
@@ -78,14 +76,43 @@ export const InteractiveCV = ({ cvData }) => {
 								/>
 								<HardSkills subtitle="Tecnologías" items={technologies} />
 							</div>
-						)}
-						{visibleTab === "soft-skills" && (
+						</Section>
+						<Section title="🔧 Soft Skills">
 							<SkillList softSkills={softSkills} />
-						)}
-						{visibleTab === "languages" && (
+						</Section>
+						<Section title="💬 Idiomas">
 							<LanguageList languages={languages} />
-						)}
-					</Section>
+						</Section>
+					</>
+				) : (
+					currentTab && (
+						<Section
+							title={currentTab.label}
+							className={animating ? "scroll-collapse" : "scroll-expand"}
+						>
+							{visibleTab === "experience" && (
+								<ExperienceList experience={experience} />
+							)}
+							{visibleTab === "education" && (
+								<EducationList education={education} />
+							)}
+							{visibleTab === "it-skills" && (
+								<div className="computer-skills">
+									<HardSkills
+										subtitle="Lenguajes de desarrollo"
+										items={devLanguages}
+									/>
+									<HardSkills subtitle="Tecnologías" items={technologies} />
+								</div>
+							)}
+							{visibleTab === "soft-skills" && (
+								<SkillList softSkills={softSkills} />
+							)}
+							{visibleTab === "languages" && (
+								<LanguageList languages={languages} />
+							)}
+						</Section>
+					)
 				)}
 			</div>
 		</div>
