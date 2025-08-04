@@ -30,7 +30,7 @@ export const Curriculum = ({ cvData }) => {
 				<Section title={"🧑🏻‍🎓 Educación"}>
 					<EducationList education={education} />
 				</Section>
-				<Section title={"🖥️ Competencias informáticas"}>
+				<Section title={"🖥️ Informática"}>
 					<div className="computer-skills">
 						<HardSkills
 							subtitle="Lenguajes de desarrollo"

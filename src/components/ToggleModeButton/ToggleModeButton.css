@@ -1,0 +1,22 @@
+.toggle-mode-button {
+  cursor: pointer;
+  background-color: #676f5441;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-right: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.toggle-mode-button:hover {
+  background-color: #7a856a8a;
+}
+
+
+.toggle-mode-button:focus,
+.toggle-mode-button:active {
+  background-color: #676f5441;
+  outline: none;
+}
