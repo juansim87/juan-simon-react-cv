@@ -7,6 +7,7 @@ import { EducationList } from "../EducationList/EducationList";
 import { SkillList } from "../SkillList/SkillList";
 import { LanguageList } from "../LanguageList/LanguageList";
 import { HardSkills } from "../HardSkills/HardSkills";
+import { DownloadButton } from "../DownloadButton/DownloadButton";
 
 export const Curriculum = ({ cvData }) => {
 	const {
@@ -45,6 +46,7 @@ export const Curriculum = ({ cvData }) => {
 					<LanguageList languages={languages} />
 				</Section>
 			</div>
+			<DownloadButton/>
 		</div>
 	);
 };
