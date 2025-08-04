@@ -80,14 +80,3 @@
 		gap: 60px;
 	}
 }
-
-
-@media print {
-	.header {
-		flex-direction: column;
-	}
-
-	.header-info {
-		gap: 40px;
-	}
-}
