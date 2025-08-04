@@ -1,9 +1,16 @@
+:root {
+	--cv-container-width: 90%;
+}
+
 .interactive-cv {
-	width: 100%;
+	width: var(--cv-container-width);
+	box-sizing: border-box;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 20px 0;
 }
 
 
