@@ -7,6 +7,7 @@ import { EducationList } from "../EducationList/EducationList";
 import { SkillList } from "../SkillList/SkillList";
 import { LanguageList } from "../LanguageList/LanguageList";
 import { HardSkills } from "../HardSkills/HardSkills";
+import { DownloadButton } from "../DownloadButton/DownloadButton";
 
 export const InteractiveCV = ({ cvData }) => {
 	const {
@@ -26,7 +27,7 @@ export const InteractiveCV = ({ cvData }) => {
 		{ id: "all", label: "📄 CV completo" },
 		{ id: "experience", label: "📋 Experiencia" },
 		{ id: "education", label: "🎓 Educación" },
-		{ id: "it-skills", label: "🖥️ Competencias informáticas" },
+		{ id: "it-skills", label: "🖥️ Informática" },
 		{ id: "soft-skills", label: "🔧 Soft Skills" },
 		{ id: "languages", label: "💬 Idiomas" },
 	];
@@ -83,6 +84,7 @@ export const InteractiveCV = ({ cvData }) => {
 						<Section title="💬 Idiomas">
 							<LanguageList languages={languages} />
 						</Section>
+						<DownloadButton/>
 					</>
 				) : (
 					currentTab && (

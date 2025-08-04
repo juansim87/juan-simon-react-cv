@@ -11,9 +11,6 @@ export const Footer = ({ cvData }) => {
 
 	return (
 		<div className="footer">
-			<button onClick={() => window.print()} className="download-btn">
-				📄 Descargar en PDF
-			</button>
 			<div className="footer-contact">
 				<div className="footer-rrss">
 					<div className="rrss-icon">
