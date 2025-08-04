@@ -81,6 +81,7 @@
 	cursor: pointer;
 	background-color: #676f5441;
 	transition: background-color 0.3s ease;
+	font-weight: 500;
 }
 
 .checkbox:hover {
@@ -98,7 +99,7 @@
 		font-size: 1.1rem;
 	}
 	.checkbox {
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
 }
 
