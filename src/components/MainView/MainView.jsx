@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./MainView.css";
-import { Curriculum } from "../Curriculum/Curriculum";
 import { InteractiveCV } from "../InteractiveCV/InteractiveCV";
 import { Footer } from "../Footer/Footer";
+import { TraditionalCV } from "../TraditionalCV/TraditionalCV";
 
 export const MainView = ({ cvData }) => {
 	const [view, setView] = useState("traditional");
@@ -27,7 +27,7 @@ export const MainView = ({ cvData }) => {
 			</nav>
 			<div className="cv-content">
 				{view === "traditional" ? (
-					<Curriculum cvData={cvData} />
+					<TraditionalCV cvData={cvData} />
 				) : (
 					<InteractiveCV cvData={cvData} />
 				)}
