@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-import "./Curriculum.css";
+import "./TraditionalCV.css";
 import { Header } from "../Header/Header";
 import { Section } from "../Section/Section";
 import { ExperienceList } from "../ExperienceList/ExperienceList";
@@ -9,7 +9,7 @@ import { LanguageList } from "../LanguageList/LanguageList";
 import { HardSkills } from "../HardSkills/HardSkills";
 import { DownloadButton } from "../DownloadButton/DownloadButton";
 
-export const Curriculum = ({ cvData }) => {
+export const TraditionalCV = ({ cvData }) => {
 	const {
 		personalInfo,
 		experience,
@@ -46,7 +46,7 @@ export const Curriculum = ({ cvData }) => {
 					<LanguageList languages={languages} />
 				</Section>
 			</div>
-			<DownloadButton/>
+			<DownloadButton />
 		</div>
 	);
 };
