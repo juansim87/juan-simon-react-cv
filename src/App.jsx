@@ -7,19 +7,39 @@ import { MainView } from "./components/MainView/MainView";
 
 export const App = () => {
 	const [darkMode, setDarkMode] = useState(false);
+	const [showMainView, setShowMainView] = useState(false);
+
 	const onToggleDarkMode = () => {
 		setDarkMode((prev) => !prev);
 	};
 
 	return (
 		<div className={darkMode ? "dark-mode" : "light-mode"}>
-			<div id="dark-mode-btn" role="button" onClick={onToggleDarkMode} aria-label="Cambiar entre modo oscuro y modo claro">
+			<div
+				id="dark-mode-btn"
+				role="button"
+				onClick={onToggleDarkMode}
+				aria-label="Cambiar entre modo oscuro y modo claro"
+			>
 				<img
 					src={darkMode ? sunIcon : moonIcon}
 					alt="Icono modo claro y modo oscuro"
 				/>
 			</div>
-			<MainView cvData = {cvData} />
+			{!showMainView ? (
+				<div className="welcome-screen">
+					<h1>Conoce a Juan Simón</h1>
+					<div
+						role="button"
+						className="welcome-button"
+						onClick={() => setShowMainView(true)}
+					>
+						<span>Entrar</span>
+					</div>
+				</div>
+			) : (
+				<MainView cvData={cvData} />
+			)}
 		</div>
 	);
 };
