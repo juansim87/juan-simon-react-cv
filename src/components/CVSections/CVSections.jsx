@@ -6,6 +6,7 @@ import { SkillList } from "../SkillList/SkillList";
 import { LanguageList } from "../LanguageList/LanguageList";
 import { DownloadButton } from "../DownloadButton/DownloadButton";
 import { HardSkills } from "../HardSkills/HardSkills";
+import { Section } from "../Section/Section";
 
 export const CVSections = ({
 	tabs,

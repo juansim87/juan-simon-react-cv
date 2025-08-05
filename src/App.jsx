@@ -28,13 +28,13 @@ export const App = () => {
 			</div>
 			{!showMainView ? (
 				<div className="welcome-screen">
-					<h1>Conoce a Juan Simón</h1>
+					<h1>Pero... ¿Quién es Juan Simón?</h1>
 					<div
 						role="button"
 						className="welcome-button"
 						onClick={() => setShowMainView(true)}
 					>
-						<span>Entrar</span>
+						<span>¡Conóceme!</span>
 					</div>
 				</div>
 			) : (
