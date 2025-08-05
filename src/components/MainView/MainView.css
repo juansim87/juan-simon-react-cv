@@ -6,6 +6,11 @@
 	padding: 20px 0;
 }
 
+.main-view.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
 .cv-nav {
 	display: flex;
 	justify-content: center;
