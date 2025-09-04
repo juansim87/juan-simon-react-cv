@@ -210,7 +210,7 @@ const cvData = {
 		{
 			id: "tec6",
 			name: "Figma",
-			level: "Académico",
+			level: "Profesional",
 			logo: "/logos/figma-logo.png",
 		},
 		{
