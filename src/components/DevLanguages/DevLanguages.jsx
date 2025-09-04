@@ -6,20 +6,19 @@ export const DevLanguages = ({ devLanguages, subtitle }) => {
 		<div className="computer-skills-container">
 			<h3>{subtitle}</h3>
 			<div className="computer-skills-list">
-
-			{devLanguages.map((item) => (
-				<div className="skill-item" key={item.id}>
-					<div className="dev-language">
-						<div className="dev-language-logo">
-							<img src={item.logo} alt={`Logo de ${item.name}`} />
+				{devLanguages.map((item) => (
+					<div className="skill-item" key={item.id}>
+						<div className="dev-language">
+							<div className="dev-language-logo">
+								<img src={item.logo} alt={`Logo de ${item.name}`} />
+							</div>
+							<h4>{item.name}</h4>
 						</div>
-						<h4>{item.name}</h4>
+						<p className="dev-language-level">
+							Nivel: <span>{item.level}</span>
+						</p>
 					</div>
-					<p className="dev-language-level">
-						Nivel: <span>{item.level}</span>
-					</p>
-				</div>
-			))}
+				))}
 			</div>
 		</div>
 	);

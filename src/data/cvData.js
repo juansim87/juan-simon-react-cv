@@ -18,7 +18,7 @@ const cvData = {
 			title: "Frontend Engineer  -  React",
 			company: "Rocket418",
 			location: "Remoto",
-			startDate: "oct. 2023",
+			startDate: "oct. 2022",
 			endDate: "Presente",
 			description: [
 				"Desarrollo de nuevas funcionalidades",
@@ -32,7 +32,7 @@ const cvData = {
 			company: "Atresmedia",
 			location: "Madrid (España)",
 			startDate: "ene. 2020",
-			endDate: "oct. 2023",
+			endDate: "oct. 2022",
 			description: [
 				"Redacción de contenido SEO",
 				"Creación e implementación de estrategias de posicionamiento para contenido de laSexta.com",
@@ -150,7 +150,12 @@ const cvData = {
 			level: "Profesional",
 			logo: "/logos/html5-logo.png",
 		},
-		{ id: "dev2", name: "CSS", level: "Profesional", logo: "/logos/css3-logo.png" },
+		{
+			id: "dev2",
+			name: "CSS",
+			level: "Profesional",
+			logo: "/logos/css3-logo.png",
+		},
 		{
 			id: "dev3",
 			name: "JavaScript",
@@ -171,6 +176,12 @@ const cvData = {
 			name: "React",
 			level: "Profesional",
 			logo: "/logos/react-logo.png",
+		},
+		{
+			id: "tec8",
+			name: "Tailwind",
+			level: "Profesional",
+			logo: "/logos/tailwind-logo.png",
 		},
 		{
 			id: "tec2",
@@ -196,8 +207,18 @@ const cvData = {
 			level: "Académico",
 			logo: "/logos/bootstrap-logo.png",
 		},
-		{ id: "tec6", name: "Figma", level: "Académico", logo: "/logos/figma-logo.png" },
-		{ id: "tec7", name: "Git", level: "Profesional", logo: "/logos/git-logo.png" },
+		{
+			id: "tec6",
+			name: "Figma",
+			level: "Académico",
+			logo: "/logos/figma-logo.png",
+		},
+		{
+			id: "tec7",
+			name: "Git",
+			level: "Profesional",
+			logo: "/logos/git-logo.png",
+		},
 	],
 
 	languages: [

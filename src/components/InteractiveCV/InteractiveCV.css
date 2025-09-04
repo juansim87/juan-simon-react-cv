@@ -57,6 +57,48 @@
 	transform-origin: top;
 }
 
+<<<<<<< HEAD
+=======
+
+.selection-warning {
+	margin-top: 20px;
+	font-style: italic;
+	font-weight: 200;
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 4px 8px;
+	margin: 4px 0;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #676f5441;
+	transition: background-color 0.3s ease;
+	font-weight: 500;
+}
+
+.checkbox:hover {
+	background-color: #98372881;
+}
+
+.checkbox input[type="checkbox"] {
+	accent-color: #983728;
+	width: 16px;
+	height: 16px;
+}
+
+@media (min-width: 481px) {
+	.toggle-mode-button {
+		font-size: 1.1rem;
+	}
+	.checkbox {
+		font-size: 1.3rem;
+	}
+}
+
+>>>>>>> develop
 @keyframes scrollOpen {
 	0% {
 		opacity: 0;

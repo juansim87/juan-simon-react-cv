@@ -29,10 +29,11 @@
 	gap: 1rem;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 1rem;
 }
 
 .footer-rrss .rrss-icon {
-	width: 24px;
+	width: 32px;
 	height: 24px;
 }
 

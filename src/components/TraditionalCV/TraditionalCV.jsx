@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-import "./Curriculum.css";
+import "./TraditionalCV.css";
 import { Header } from "../Header/Header";
 import { Section } from "../Section/Section";
 import { ExperienceList } from "../ExperienceList/ExperienceList";
@@ -8,7 +8,7 @@ import { SkillList } from "../SkillList/SkillList";
 import { LanguageList } from "../LanguageList/LanguageList";
 import { HardSkills } from "../HardSkills/HardSkills";
 
-export const Curriculum = ({ cvData }) => {
+export const TraditionalCV = ({ cvData, darkMode }) => {
 	const {
 		personalInfo,
 		experience,
@@ -21,7 +21,7 @@ export const Curriculum = ({ cvData }) => {
 
 	return (
 		<div className="curriculum-container">
-			<Header info={personalInfo} />
+			<Header info={personalInfo} darkMode={darkMode}/>
 			<div className="sections">
 				<Section title={"📋 Experiencia"}>
 					<ExperienceList experience={experience} />
@@ -45,6 +45,7 @@ export const Curriculum = ({ cvData }) => {
 					<LanguageList languages={languages} />
 				</Section>
 			</div>
+			<DownloadButton />
 		</div>
 	);
 };

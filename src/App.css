@@ -41,13 +41,15 @@
 
 .light-mode {
 	--text-color: #04151f;
-	background-color: #e1d8cf;
+	--bg-color: #e1d8cf;
+	background-color: var(--bg-color);
 	color: var(--text-color);
 }
 
 .dark-mode {
 	--text-color: #e1d8cf;
-	background-color: #2a2a38;
+	--bg-color: #2a2a38;
+	background-color: var(--bg-color);
 	color: var(--text-color);
 }
 

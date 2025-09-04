@@ -1,27 +1,19 @@
 import { useState } from "react";
 import "./InteractiveCV.css";
 import { Header } from "../Header/Header";
-import { Section } from "../Section/Section";
-import { ExperienceList } from "../ExperienceList/ExperienceList";
-import { EducationList } from "../EducationList/EducationList";
-import { SkillList } from "../SkillList/SkillList";
-import { LanguageList } from "../LanguageList/LanguageList";
-import { HardSkills } from "../HardSkills/HardSkills";
+import { ToggleModeButton } from "../ToggleModeButton/ToggleModeButton";
+import { TabNavigation } from "../TabNavigation/TabNavigation";
+import { CVSections } from "../CVSections/CVSections";
 
-export const InteractiveCV = ({ cvData }) => {
-	const {
-		personalInfo,
-		experience,
-		education,
-		softSkills,
-		devLanguages,
-		technologies,
-		languages,
-	} = cvData;
-
-	const [activeTab, setActiveTab] = useState("experience");
+export const InteractiveCV = ({ cvData, darkMode }) => {
+	const [activeTab, setActiveTab] = useState("all");
 	const [animating, setAnimating] = useState(false);
-	const [visibleTab, setVisibleTab] = useState("experience");
+	const [visibleTab, setVisibleTab] = useState("all");
+	const [toggleMode, setToggleMode] = useState("viewMode");
+	const [isSelected, setIsSelected] = useState([]);
+
+	const { personalInfo } = cvData;
+
 	const tabs = [
 		{ id: "experience", label: "📋 Experiencia" },
 		{ id: "education", label: "🎓 Educación" },
@@ -42,51 +34,46 @@ export const InteractiveCV = ({ cvData }) => {
 		}, 400);
 	};
 
-	const currentTab = tabs.find((tab) => tab.id === visibleTab);
+	const handleModeChange = () => {
+		toggleMode === "viewMode"
+			? setToggleMode("selectionMode")
+			: setToggleMode("viewMode");
+	};
+
+	const handleInputChange = (id) => {
+		setIsSelected((prev) =>
+			prev.includes(id)
+				? prev.filter((sectionId) => sectionId !== id)
+				: [...prev, id]
+		);
+	};
+
 	return (
 		<div className="interactive-cv">
-			<Header info={personalInfo} />
+			<Header info={personalInfo} darkMode={darkMode}/>
 			<div className="tab-nav">
-				{tabs.map((item) => (
-					<div
-						key={item.id}
-						className={`tab ${activeTab === item.id ? "active-tab" : ""}`}
-						onClick={() => handleTabChange(item.id)}
-						role="button"
-					>
-						<p>{item.label}</p>
-					</div>
-				))}
+				<ToggleModeButton
+					toggleMode={toggleMode}
+					handleModeChange={handleModeChange}
+				/>
+				<TabNavigation
+					tabs={tabs}
+					toggleMode={toggleMode}
+					activeTab={activeTab}
+					isSelected={isSelected}
+					handleTabChange={handleTabChange}
+					handleInputChange={handleInputChange}
+				/>
 			</div>
 			<div className="interactive-content">
-				{currentTab && (
-					<Section
-						title={currentTab.label}
-						className={animating ? "scroll-collapse" : "scroll-expand"}
-					>
-						{visibleTab === "experience" && (
-							<ExperienceList experience={experience} />
-						)}
-						{visibleTab === "education" && (
-							<EducationList education={education} />
-						)}
-						{visibleTab === "it-skills" && (
-							<div className="computer-skills">
-								<HardSkills
-									subtitle="Lenguajes de desarrollo"
-									items={devLanguages}
-								/>
-								<HardSkills subtitle="Tecnologías" items={technologies} />
-							</div>
-						)}
-						{visibleTab === "soft-skills" && (
-							<SkillList softSkills={softSkills} />
-						)}
-						{visibleTab === "languages" && (
-							<LanguageList languages={languages} />
-						)}
-					</Section>
-				)}
+				<CVSections
+					tabs={tabs}
+					mode={toggleMode}
+					visibleTab={visibleTab}
+					isSelected={isSelected}
+					animating={animating}
+					cvData={cvData}
+				/>
 			</div>
 		</div>
 	);

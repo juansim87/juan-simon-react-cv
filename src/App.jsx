@@ -7,6 +7,7 @@ import { MainView } from "./components/MainView/MainView";
 
 export const App = () => {
 	const [darkMode, setDarkMode] = useState(false);
+	const [showMainView,setShowMainView] = useState(false);
 	const onToggleDarkMode = () => {
 		setDarkMode((prev) => !prev);
 	};
@@ -19,7 +20,20 @@ export const App = () => {
 					alt="Icono modo claro y modo oscuro"
 				/>
 			</div>
-			<MainView cvData = {cvData} />
+			{!showMainView ? (
+				<div className="welcome-screen">
+					<h1>Pero... ¿Quién es Juan Simón?</h1>
+					<div
+						role="button"
+						className="welcome-button"
+						onClick={() => setShowMainView(true)}
+					>
+						<span>¡Conóceme!</span>
+					</div>
+				</div>
+			) : (
+				<MainView cvData={cvData} darkMode={darkMode} />
+			)}
 		</div>
 	);
 };

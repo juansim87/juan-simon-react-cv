@@ -16,17 +16,18 @@
 
 .rrss {
 	display: flex;
+<<<<<<< HEAD
+=======
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border: 3px solid currentColor;
+	border-radius: 20px;
+>>>>>>> develop
 	gap: 20px;
 }
 
-.rrss-icon {
-	width: 40px;
-}
 
-.rrss-icon img {
-	width: 100%;
-	border-radius: 8px;
-}
 
 @media (min-width: 481px) {
 	.rrss {

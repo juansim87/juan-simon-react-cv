@@ -2,7 +2,7 @@
 import { ContactInfo } from "../ContactInfo/ContactInfo";
 import "./Header.css";
 
-export const Header = ({ info }) => {
+export const Header = ({ info, darkMode }) => {
 	const { photo, fullName, title, summary } = info;
 
 	return (
@@ -19,10 +19,10 @@ export const Header = ({ info }) => {
 
 			<div className="header-info">
 				<div className="about-me">
-				<h3>Sobre mí</h3>
+					<h3>Sobre mí</h3>
 					<p className="item-description">{summary}</p>
 				</div>
-				<ContactInfo info={info} />
+				<ContactInfo info={info} darkMode={darkMode}/>
 			</div>
 		</div>
 	);

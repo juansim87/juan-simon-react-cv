@@ -2,10 +2,9 @@
 import "./ExperienceItem.css";
 
 export const ExperienceItem = ({ jobItem }) => {
-	const { company, title, location, startDate, endDate, description, id } = jobItem;
+	const { company, title, location, startDate, endDate, description, id } =
+		jobItem;
 
-
-	
 	return (
 		<div className="item-container">
 			<div className="item-title">

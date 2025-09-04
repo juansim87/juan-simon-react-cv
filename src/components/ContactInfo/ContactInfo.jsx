@@ -1,10 +1,13 @@
 // import { useState } from 'react';
 import "./ContactInfo.css";
-import githubLogo from "../../assets/icons/github-logo.png"
-import linkedinLogo from "../../assets/icons/linkedin-logo.png"
-import portfolioLogo from "../../assets/images/juan-simon-logo.png"
+import githubLogoDark from "../../assets/icons/github-logo-dark.png";
+import githubLogoLight from "../../assets/icons/github-logo-light.png";
+import linkedinLogoDark from "../../assets/icons/linkedin-logo-dark.png";
+import linkedinLogoLight from "../../assets/icons/linkedin-logo-light.png";
+import portfolioLogoDark from "../../assets/icons/juan-simon-logo-dark.png";
+import portfolioLogoLight from "../../assets/icons/juan-simon-logo-light.png";
 
-export const ContactInfo = ({ info }) => {
+export const ContactInfo = ({ info, darkMode }) => {
 	const { location, email, linkedin, github, portfolio } = info;
 
 	return (
@@ -16,9 +19,33 @@ export const ContactInfo = ({ info }) => {
 				📧 <span>{email}</span>
 			</p>
 			<div className="rrss">
-				<div className="rrss-icon"><a href={github}><img src={githubLogo}/></a></div>
-				<div className="rrss-icon"><a href={linkedin}><img src={linkedinLogo}/></a></div>
-				<div className= "rrss-icon"><a href={portfolio}><img src={portfolioLogo}/></a></div>
+				<div className="rrss-icon tooltip">
+					<a href={github} target="_blank" rel="noopener noreferrer">
+						<img
+							src={darkMode ? githubLogoDark : githubLogoLight}
+							alt="Logo de GitHub"
+						/>
+						<span className="tooltip-text">Ver perfil de GitHub</span>
+					</a>
+				</div>
+				<div className="rrss-icon tooltip">
+					<a href={linkedin} target="_blank" rel="noopener noreferrer">
+						<img
+							src={darkMode ? linkedinLogoDark : linkedinLogoLight}
+							alt="Logo de LinkedIn"
+						/>
+						<span className="tooltip-text">Ver perfil de LinkedIn</span>
+					</a>
+				</div>
+				<div className="rrss-icon tooltip">
+					<a href={portfolio} target="_blank" rel="noopener noreferrer">
+						<img
+							src={darkMode ? portfolioLogoDark : portfolioLogoLight}
+							alt="Logo de portfolio de Juan Simón Abad"
+						/>
+						<span className="tooltip-text">Visitar portfolio personal</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	);
