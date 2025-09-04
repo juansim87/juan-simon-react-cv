@@ -72,7 +72,7 @@
 	width: 100%;
 	height: auto;
 	display: block;
-	pointer-events: none; /* para que el clic se registre en el div */
+	pointer-events: none;
 }
 
 #dark-mode-btn:hover {
