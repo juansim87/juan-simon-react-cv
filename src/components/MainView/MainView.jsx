@@ -4,7 +4,7 @@ import { InteractiveCV } from "../InteractiveCV/InteractiveCV";
 import { Footer } from "../Footer/Footer";
 import { TraditionalCV } from "../TraditionalCV/TraditionalCV";
 
-export const MainView = ({ cvData }) => {
+export const MainView = ({ cvData, darkMode }) => {
 	const [view, setView] = useState("interactive");
 
 	return (
@@ -27,12 +27,12 @@ export const MainView = ({ cvData }) => {
 			</nav>
 			<div className="cv-content">
 				{view === "traditional" ? (
-					<TraditionalCV cvData={cvData} />
+					<TraditionalCV cvData={cvData} darkMode={darkMode} />
 				) : (
-					<InteractiveCV cvData={cvData} />
+					<InteractiveCV cvData={cvData} darkMode={darkMode}/>
 				)}
 			</div>
-			<Footer cvData={cvData} />
+			<Footer cvData={cvData} darkMode={darkMode}/>
 		</div>
 	);
 };

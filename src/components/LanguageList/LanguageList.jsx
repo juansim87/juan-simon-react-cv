@@ -8,7 +8,7 @@ export const LanguageList = ({ languages }) => {
 				<div key={item.id}>
 					<span className="language-title">
 						<div className="language-flag">
-							<img src={item.flag} alt={`Bandera de ${item.countryFlag}`}/>
+							<img src={item.flag} alt={`Bandera de ${item.countryFlag}`} />
 						</div>
 						<h3>{item.language}</h3>
 					</span>

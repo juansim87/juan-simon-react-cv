@@ -9,7 +9,7 @@ import { LanguageList } from "../LanguageList/LanguageList";
 import { HardSkills } from "../HardSkills/HardSkills";
 import { DownloadButton } from "../DownloadButton/DownloadButton";
 
-export const TraditionalCV = ({ cvData }) => {
+export const TraditionalCV = ({ cvData, darkMode }) => {
 	const {
 		personalInfo,
 		experience,
@@ -22,7 +22,7 @@ export const TraditionalCV = ({ cvData }) => {
 
 	return (
 		<div className="curriculum-container">
-			<Header info={personalInfo} />
+			<Header info={personalInfo} darkMode={darkMode}/>
 			<div className="sections">
 				<Section title={"📋 Experiencia"}>
 					<ExperienceList experience={experience} />

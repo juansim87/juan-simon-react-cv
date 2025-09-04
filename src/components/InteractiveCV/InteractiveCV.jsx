@@ -5,7 +5,7 @@ import { ToggleModeButton } from "../ToggleModeButton/ToggleModeButton";
 import { TabNavigation } from "../TabNavigation/TabNavigation";
 import { CVSections } from "../CVSections/CVSections";
 
-export const InteractiveCV = ({ cvData }) => {
+export const InteractiveCV = ({ cvData, darkMode }) => {
 	const [activeTab, setActiveTab] = useState("all");
 	const [animating, setAnimating] = useState(false);
 	const [visibleTab, setVisibleTab] = useState("all");
@@ -51,7 +51,7 @@ export const InteractiveCV = ({ cvData }) => {
 
 	return (
 		<div className="interactive-cv">
-			<Header info={personalInfo} />
+			<Header info={personalInfo} darkMode={darkMode}/>
 			<div className="tab-nav">
 				<ToggleModeButton
 					toggleMode={toggleMode}
