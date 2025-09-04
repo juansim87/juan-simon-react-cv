@@ -38,7 +38,7 @@ export const App = () => {
 					</div>
 				</div>
 			) : (
-				<MainView cvData={cvData} />
+				<MainView cvData={cvData} darkMode={darkMode} />
 			)}
 		</div>
 	);

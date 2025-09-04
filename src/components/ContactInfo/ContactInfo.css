@@ -17,19 +17,12 @@
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
-	border: 1px solid currentColor;
+	border: 3px solid currentColor;
 	border-radius: 20px;
 	gap: 20px;
 }
 
-.rrss-icon {
-	width: 40px;
-}
 
-.rrss-icon img {
-	width: 100%;
-	border-radius: 8px;
-}
 
 @media (min-width: 481px) {
 	.location-and-mail {
