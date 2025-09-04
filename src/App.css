@@ -1,3 +1,45 @@
+.welcome-screen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+	gap: 2rem;
+	padding: 2rem;
+	animation: fadeIn 1s ease-in;
+}
+
+.welcome-screen h1 {
+	font-size: 2.5rem;
+}
+
+.welcome-button {
+	cursor: pointer;
+	background-color: #676f5441;
+	padding: 4px 8px;
+	border-radius: 4px;
+	padding: 0.75rem 1.5rem;
+	font-weight: 600;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.welcome-button:hover {
+	transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .item-container {
 	display: flex;
 	flex-direction: column;
@@ -72,7 +114,7 @@
 	width: 100%;
 	height: auto;
 	display: block;
-	pointer-events: none;
+	pointer-events: none; /* para que el clic se registre en el div */
 }
 
 #dark-mode-btn:hover {
@@ -94,5 +136,76 @@
 	.computer-skills-list {
 		justify-content: flex-start;
 		row-gap: 20px;
+	}
+}
+
+/* ESTILOS PARA IMPRESIÓN PDF*/
+
+@media print {
+	body {
+		margin: 0;
+		padding: 0;
+		background: white;
+		color: black;
+	}
+
+
+	.curriculum-container,
+	.interactive-cv {
+		height: auto !important;
+		overflow: visible !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		margin: 0 auto !important;
+		box-shadow: none;
+	}
+
+	html,
+	body {
+		width: 100%;
+		height: auto;
+		overflow: visible;
+		font-size: 12pt;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+	h4 {
+		font-size: 1.1em;
+	}
+
+	p,
+	li,
+	span,
+	a {
+		font-size: 1em;
+	}
+}
+
+@media print {
+	nav,
+	.tab-nav,
+	#dark-mode-btn,
+	.footer,
+	.download-btn {
+		display: none !important;
+	}
+}
+
+@media print {
+	section,
+	.section {
+		page-break-inside: avoid;
+		page-break-after: auto;
 	}
 }
