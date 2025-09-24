@@ -1,11 +1,11 @@
-import { useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import "./InteractiveCV.css";
 import { Header } from "../Header/Header";
 import { ToggleModeButton } from "../ToggleModeButton/ToggleModeButton";
 import { TabNavigation } from "../TabNavigation/TabNavigation";
 import { CVSections } from "../CVSections/CVSections";
 
-export const InteractiveCV = ({ cvData, darkMode }) => {
+export const InteractiveCV = React.memo(({ cvData, darkMode }) => {
 	const [activeTab, setActiveTab] = useState("all");
 	const [animating, setAnimating] = useState(false);
 	const [visibleTab, setVisibleTab] = useState("all");
@@ -14,16 +14,16 @@ export const InteractiveCV = ({ cvData, darkMode }) => {
 
 	const { personalInfo } = cvData;
 
-	const tabs = [
+	const tabs = useMemo( ( )=> [
 		{ id: "all", label: "📄 CV completo" },
 		{ id: "experience", label: "📋 Experiencia" },
 		{ id: "education", label: "🎓 Educación" },
 		{ id: "it-skills", label: "🖥️ Informática" },
 		{ id: "soft-skills", label: "🔧 Soft Skills" },
 		{ id: "languages", label: "💬 Idiomas" },
-	];
+	], []);
 
-	const handleTabChange = (newTab) => {
+	const handleTabChange = useCallback((newTab) => {
 		if (newTab === activeTab || animating) return;
 
 		setAnimating(true);
@@ -33,25 +33,25 @@ export const InteractiveCV = ({ cvData, darkMode }) => {
 			setActiveTab(newTab);
 			setAnimating(false);
 		}, 400);
-	};
+	}, [activeTab, animating]);
 
-	const handleModeChange = () => {
+	const handleModeChange = useCallback(() => {
 		toggleMode === "viewMode"
 			? setToggleMode("selectionMode")
 			: setToggleMode("viewMode");
-	};
+	}, [toggleMode]);
 
-	const handleInputChange = (id) => {
+	const handleInputChange = useCallback((id) => {
 		setIsSelected((prev) =>
 			prev.includes(id)
 				? prev.filter((sectionId) => sectionId !== id)
 				: [...prev, id]
 		);
-	};
+	}, []);
 
 	return (
 		<div className="interactive-cv">
-			<Header info={personalInfo} darkMode={darkMode}/>
+			<Header info={personalInfo} darkMode={darkMode} />
 			<div className="tab-nav">
 				<ToggleModeButton
 					toggleMode={toggleMode}
@@ -78,4 +78,4 @@ export const InteractiveCV = ({ cvData, darkMode }) => {
 			</div>
 		</div>
 	);
-};
+});

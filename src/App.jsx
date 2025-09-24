@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import "./App.css";
 import cvData from "./data/cvData";
 import sunIcon from "./assets/icons/sun.png";
@@ -9,9 +9,11 @@ export const App = () => {
 	const [darkMode, setDarkMode] = useState(false);
 	const [showMainView, setShowMainView] = useState(false);
 
-	const onToggleDarkMode = () => {
+	const onToggleDarkMode = useCallback(() => {
 		setDarkMode((prev) => !prev);
-	};
+	}, []);
+
+	const loadMainView = useCallback(() => setShowMainView(true), [])
 
 	return (
 		<div className={darkMode ? "dark-mode" : "light-mode"}>
@@ -32,7 +34,7 @@ export const App = () => {
 					<div
 						role="button"
 						className="welcome-button"
-						onClick={() => setShowMainView(true)}
+						onClick={loadMainView}
 					>
 						<span>¡Conóceme!</span>
 					</div>

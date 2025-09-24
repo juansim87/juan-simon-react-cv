@@ -8,8 +8,9 @@ import { SkillList } from "../SkillList/SkillList";
 import { LanguageList } from "../LanguageList/LanguageList";
 import { HardSkills } from "../HardSkills/HardSkills";
 import { DownloadButton } from "../DownloadButton/DownloadButton";
+import React from "react";
 
-export const TraditionalCV = ({ cvData, darkMode }) => {
+export const TraditionalCV = React.memo(({ cvData, darkMode }) => {
 	const {
 		personalInfo,
 		experience,
@@ -22,7 +23,7 @@ export const TraditionalCV = ({ cvData, darkMode }) => {
 
 	return (
 		<div className="curriculum-container">
-			<Header info={personalInfo} darkMode={darkMode}/>
+			<Header info={personalInfo} darkMode={darkMode} />
 			<div className="sections">
 				<Section title={"📋 Experiencia"}>
 					<ExperienceList experience={experience} />
@@ -49,4 +50,4 @@ export const TraditionalCV = ({ cvData, darkMode }) => {
 			<DownloadButton />
 		</div>
 	);
-};
+});
